@@ -34,13 +34,12 @@ export default function Abelhetra() {
 
   function embaralha(listaLetras){
     listaLetras = listaLetras.split("")
-    
+    listaLetras.pop()
     let letraAtual = listaLetras[0]
     setLetraRepete(letraAtual.toUpperCase())
     listaLetras.splice(0, 1)
     
     listaLetras = shuffle(listaLetras)
-    console.log(listaLetras)
     setLetra1(listaLetras[0].toUpperCase())
     setLetra2(listaLetras[1].toUpperCase())
     setLetra3(listaLetras[2].toUpperCase())
@@ -54,21 +53,16 @@ export default function Abelhetra() {
   // fase = 1
 
   let fetchData = async() => {
-    //var host = window.location.host
-    //let endereco = "http://" + host + "/abelhetra/fase" + fase + ".txt"
-    let endereco = "%PUBLIC_URL%/fase" + fase + ".txt"
+    let endereco = "./fase" + fase + ".txt"
     let resp = await fetch(endereco)
     let final = await resp.text()
     let lista = final.split("\n")
-
     embaralha(lista[0])
     lista.pop()
     setLetras(lista[0])
     setPontuacao(definePontos(lista, lista[0]))
     lista.shift()
-    console.log(lista)
     setRespostas(oldRespostas => [...oldRespostas, ...lista])
-    console.log(respostas)
   }
 
   useEffect(() => {
@@ -128,7 +122,6 @@ export default function Abelhetra() {
         setAcertos(oldAcertos => [[texto, novoPonto], ...oldAcertos])
         setPonto(ponto + novoPonto)
         setTexto("")
-        console.log(acertos)
       } else if (JSON.stringify(acertos).includes(JSON.stringify([texto, novoPonto]))){
         setAviso("Palavra já encontrada")
       }
@@ -144,7 +137,6 @@ export default function Abelhetra() {
 
   function regras(){
     setMostraRegra(!mostraRegra)
-    console.log(mostraRegra)
     if (mostraRegra){
       setEstiloRegra({
         visibility : "visible",
@@ -160,7 +152,6 @@ export default function Abelhetra() {
 
   function pontos(){
     setMostraPontos(!mostraPontos)
-    console.log(mostraPontos)
     if (mostraPontos){
       setEstiloPontos({
         visibility : "visible",
@@ -252,7 +243,7 @@ export default function Abelhetra() {
         <a>{aviso}</a>
       </div>
     </div>
-    <div style={{height: "250px"}} id="1.0.1">
+    <div style={{height: "250px"}}>
       <div class="acertos">
         <ul>
           <li style={{fontSize: "20px"}}>Acertos:</li>
