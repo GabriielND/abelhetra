@@ -17,7 +17,6 @@ export function shuffle(array) {
 }
 
 export function pontua(palavra, letras, extra){
-  console.log(palavra.length)
   if (palavra.length === 4){
     return 1
   }
@@ -50,8 +49,6 @@ export function definePontos(respostas, letras){
   pontuacao.push(Math.round(36 * media))
   pontuacao.push(Math.round(48 * media))
   pontuacao.push(Math.round(60 * media))
-  console.log(pontosTotais)
-  console.log(pontuacao)
   return pontuacao
 
 }
