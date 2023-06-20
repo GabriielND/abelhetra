@@ -34,7 +34,6 @@ export default function Abelhetra() {
 
   function embaralha(listaLetras){
     listaLetras = listaLetras.split("")
-    listaLetras.pop()
     let letraAtual = listaLetras[0]
     setLetraRepete(letraAtual.toUpperCase())
     listaLetras.splice(0, 1)
