@@ -45,6 +45,7 @@ avati
 aveia
 aviar
 avisa
+avise
 aviva
 eivar
 ervar
@@ -131,6 +132,7 @@ esteve
 estive
 esvair
 evitar
+evitei
 raiava
 raivar
 raivas
@@ -154,6 +156,7 @@ tirava
 tivera
 travar
 travas
+travei
 traves
 trevas
 trivia
@@ -260,6 +263,7 @@ viveres
 vivesse
 arrasava
 aterrava
+atestava
 ativista
 atrativa
 avatares
@@ -296,6 +300,7 @@ travesti
 triviais
 versaria
 vestiria
+vestisse
 visitara
 visitava
 visiveis
@@ -322,6 +327,7 @@ retrativa
 revertera
 revestres
 revisitar
+revistara
 terriveis
 tratativa
 travessar
@@ -331,6 +337,8 @@ travestir
 variaveis
 versateis
 vestiaria
+visitarei
+visitaria
 arrevesava
 arrevessar
 assertivas
@@ -339,6 +347,8 @@ irritativa
 reavistara
 reservista
 restritiva
+revestisse
+revisitara
 revistaria
 saveirista
 travessear
@@ -351,5 +361,6 @@ atravessava
 reservistas
 restritivas
 reversiveis
+revisitaria
 irresistiveis
 irreversiveis
