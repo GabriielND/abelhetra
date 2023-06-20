@@ -56,7 +56,7 @@ export default function Abelhetra() {
 
   let fetchData = async() => {
     var host = window.location.host
-    let endereco = "http://" + host + "/fase" + fase + ".txt"
+    let endereco = "http://" + host + "abelhetra/fase" + fase + ".txt"
     let resp = await fetch(endereco)
     let final = await resp.text()
     let lista = final.split("\n")

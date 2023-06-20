@@ -30,6 +30,7 @@ ragu
 roga
 rogo
 ruga
+agira
 agogo
 agora
 agrar
@@ -59,6 +60,7 @@ orgao
 orgia
 rigar
 rigor
+rogai
 rogar
 rogou
 rugar
@@ -91,12 +93,14 @@ garria
 garrir
 garrou
 garuar
+girara
 guaira
 guairo
 guarai
 guarir
 guiara
 irriga
+rogara
 agarrar
 agarrou
 agoirar
@@ -121,10 +125,12 @@ corrigi
 guiarao
 iguaria
 irrigar
+irrigou
 irrogar
 irrogou
 orgiaco
 acrogiro
+agarrara
 agorarca
 agraciar
 agraciou
@@ -136,8 +142,10 @@ cirurgia
 corrigia
 corrigir
 corrigiu
+irrigara
 cirurgiao
 cirurgica
 cirurgico
+irrigarao
 cigarraria
 criocirurgia
