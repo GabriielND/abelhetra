@@ -10,9 +10,9 @@
     "gh-pages": "^5.0.0",
     "react-scripts": "^1.1.5"
   },
-  "name": "ljg0t8",
+  "name": "abelhetra",
   "description": null,
-  "version": "0.0.0",
+  "version": "1.0.2",
   "homepage": "https://GabrielND.github.io/abelhetra",
   "scripts": {
     "start": "react-scripts start",
