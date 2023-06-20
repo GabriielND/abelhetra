@@ -32,19 +32,15 @@ export default function Abelhetra() {
     opacity : 0,
   });
 
-  let fase = Math.floor(Math.random() * 6) + 1
-  fase = 6
-
   function embaralha(listaLetras){
-    console.log(listaLetras)
     listaLetras = listaLetras.split("")
-    listaLetras.pop()
     
     let letraAtual = listaLetras[0]
     setLetraRepete(letraAtual.toUpperCase())
     listaLetras.splice(0, 1)
     
     listaLetras = shuffle(listaLetras)
+    console.log(listaLetras)
     setLetra1(listaLetras[0].toUpperCase())
     setLetra2(listaLetras[1].toUpperCase())
     setLetra3(listaLetras[2].toUpperCase())
@@ -54,9 +50,13 @@ export default function Abelhetra() {
 
   }
 
+  let fase = Math.floor(Math.random() * 7) + 1
+  // fase = 1
+
   let fetchData = async() => {
-    var host = window.location.host
-    let endereco = "http://" + host + "/abelhetra/fase" + fase + ".txt"
+    //var host = window.location.host
+    //let endereco = "http://" + host + "/abelhetra/fase" + fase + ".txt"
+    let endereco = "http://gabriielnd.github.io/abelhetra/fase" + fase + ".txt"
     let resp = await fetch(endereco)
     let final = await resp.text()
     let lista = final.split("\n")
@@ -252,7 +252,7 @@ export default function Abelhetra() {
         <a>{aviso}</a>
       </div>
     </div>
-    <div style={{height: "250px"}}>
+    <div style={{height: "250px"}} id="1.0.0">
       <div class="acertos">
         <ul>
           <li style={{fontSize: "20px"}}>Acertos:</li>
