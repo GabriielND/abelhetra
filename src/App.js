@@ -56,7 +56,7 @@ export default function Abelhetra() {
   let fetchData = async() => {
     //var host = window.location.host
     //let endereco = "http://" + host + "/abelhetra/fase" + fase + ".txt"
-    let endereco = "http://gabriielnd.github.io/abelhetra/fase" + fase + ".txt"
+    let endereco = "%PUBLIC_URL%/fase" + fase + ".txt"
     let resp = await fetch(endereco)
     let final = await resp.text()
     let lista = final.split("\n")
@@ -252,7 +252,7 @@ export default function Abelhetra() {
         <a>{aviso}</a>
       </div>
     </div>
-    <div style={{height: "250px"}} id="1.0.0">
+    <div style={{height: "250px"}} id="1.0.1">
       <div class="acertos">
         <ul>
           <li style={{fontSize: "20px"}}>Acertos:</li>
