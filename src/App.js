@@ -116,7 +116,7 @@ export default function Abelhetra() {
 
   function enviar(){
     sumirAviso()
-    if (respostas.includes(texto.toLowerCase() + "\r")){
+    if (respostas.includes(texto.toLowerCase() + "\r") || respostas.includes(texto.toLowerCase())){
       let novoPonto = pontua(texto.toLowerCase(), letras, true)
       if (!JSON.stringify(acertos).includes(JSON.stringify([texto, novoPonto]))){
         setAcertos(oldAcertos => [[texto, novoPonto], ...oldAcertos])
