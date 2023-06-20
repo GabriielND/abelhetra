@@ -56,6 +56,7 @@ export default function Abelhetra() {
     let resp = await fetch(endereco)
     let final = await resp.text()
     let lista = final.split("\n")
+    console.log(lista)
     embaralha(lista[0])
     lista.pop()
     setLetras(lista[0])
