@@ -3,6 +3,7 @@ import { shuffle, pontua, definePontos } from './script.js'
 
 export default function Abelhetra() {
   const [ponto, setPonto] = useState(0);
+  const [faseFixa, setFaseFixa] = useState(0);
   const [classe, setClasse] = useState("Iniciante");
   const [texto, setTexto] = useState("");
   const [aviso, setAviso] = useState("Aviso");
@@ -37,7 +38,10 @@ export default function Abelhetra() {
     let letraAtual = listaLetras[0]
     setLetraRepete(letraAtual.toUpperCase())
     listaLetras.splice(0, 1)
-    
+
+    let letraVazia = listaLetras.indexOf("\r")
+    if (letraVazia !== -1){listaLetras.splice(letraVazia, 1)}
+
     listaLetras = shuffle(listaLetras)
     setLetra1(listaLetras[0].toUpperCase())
     setLetra2(listaLetras[1].toUpperCase())
@@ -48,7 +52,7 @@ export default function Abelhetra() {
 
   }
 
-  let fase = Math.floor(Math.random() * 7) + 1
+  let fase = Math.floor(Math.random() * 10) + 1
   // fase = 1
 
   let fetchData = async() => {
@@ -62,6 +66,7 @@ export default function Abelhetra() {
     setPontuacao(definePontos(lista, lista[0]))
     lista.shift()
     setRespostas(oldRespostas => [...oldRespostas, ...lista])
+    setFaseFixa(faseFixa + fase)
   }
 
   useEffect(() => {
@@ -181,6 +186,7 @@ export default function Abelhetra() {
 
   return (
     <div class="letras">
+      <a id="fase">Fase #{faseFixa}</a>
       <a id="pontos" onClick={pontos}>{ponto} - {classe}</a>
       <a id="escrito">{texto}</a>
       <input type="text" id="escrito_input" value={texto} onKeyDown={(e) => handler(e)}/>
@@ -217,7 +223,7 @@ export default function Abelhetra() {
         <li>Palavras com 4 letras valem 1 ponto, palavras com mais de 4 letras valem 1 ponto por letra</li>
         <li>Palavras que usam todas as letras tem um adicional de 7 pontos</li>
       </ul>
-      <button id="fechar_regras" class="botao" onClick={regras}>Fechar</button>
+      <button id="fechar_regras" class="botao interno" onClick={regras}>Fechar</button>
       </div>
     </div>
 
@@ -233,7 +239,7 @@ export default function Abelhetra() {
       <a>Dicionário: {pontuacao[5]}</a>
       <a>Especialista: {pontuacao[6]}</a>
       <a>Genial: {pontuacao[7]}</a>
-      <button id="fechar_pontos" class="botao" onClick={pontos}>Fechar</button>
+      <button id="fechar_pontos" class="botao interno" onClick={pontos}>Fechar</button>
       </div>
     </div>
 

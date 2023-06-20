@@ -30,6 +30,7 @@ nove
 novo
 onda
 onde
+vina
 ainda
 andei
 anina
@@ -41,6 +42,7 @@ dende
 donde
 enodo
 envia
+envie
 envio
 india
 indio
@@ -72,6 +74,7 @@ danava
 denodo
 divina
 divino
+doando
 doendo
 idonea
 idoneo
@@ -130,6 +133,7 @@ devaneia
 devaneio
 enevoado
 envenena
+enviando
 indevida
 indevido
 inidonea
@@ -148,6 +152,7 @@ divindade
 inanidade
 invadindo
 endividado
+endividada
 envenenada
 envenenado
 idoneidade

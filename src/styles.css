@@ -56,6 +56,10 @@ body {
   font-family: 'Mukta', sans-serif;
 }
 
+.botao.interno{
+  background-color: #855bc9;
+}
+
 .botao:active, .letra:active{
   background: #68686856;
 }
@@ -74,7 +78,6 @@ body {
   flex-direction: column;
   margin: auto;
   border: 2px solid transparent;
-  padding-right: 15px;
   width: 40%;
   min-width: 300px;
   max-width: 400px;
@@ -131,7 +134,7 @@ body {
   margin-top: 0px;
 }
 
-#escrito, #pontos, #escrito_input{
+#escrito, #pontos, #escrito_input, #fase{
   display: flex;
   justify-content: center;
   align-items: center;
