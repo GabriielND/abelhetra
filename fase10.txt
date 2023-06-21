@@ -20,7 +20,7 @@ maes
 mama
 mame
 maos
-maré
+mare
 mata
 mate
 mato
@@ -414,5 +414,5 @@ terremotos
 amarrotaram
 arremeteram
 rastreassem
-termômetros
+termometros
 termostatos
