@@ -323,6 +323,7 @@ maremoto
 marmorea
 marmoreo
 marmores
+marmotas
 marretar
 masmorra
 meteoros
@@ -389,11 +390,13 @@ rememorar
 remetemos
 remeterem
 ressemear
+restarmos
 retomaram
 retomarem
 semestres
 temerosas
 terremoto
+testarmos
 torresmos
 arrastaram
 arremessam
@@ -406,11 +409,13 @@ marretaram
 metastases
 metatarsos
 motosserra
+restaremos
 retrataram
 soterraram
 termometro
 termostato
 terremotos
+testaremos
 amarrotaram
 arremeteram
 rastreassem
