@@ -87,6 +87,7 @@ ferroam
 ferroar
 formara
 formata
+formate
 formato
 ofereça
 ofertam
