@@ -54,6 +54,7 @@ celta
 delta
 latao
 letal
+letao
 octal
 tacto
 talao
