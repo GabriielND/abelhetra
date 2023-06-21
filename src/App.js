@@ -52,7 +52,7 @@ export default function Abelhetra() {
 
   }
 
-  let fase = Math.floor(Math.random() * 10) + 1
+  let fase = Math.floor(Math.random() * 11) + 1
   // fase = 1
 
   let fetchData = async() => {

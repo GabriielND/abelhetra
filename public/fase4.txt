@@ -260,6 +260,7 @@ visitei
 vitrais
 vitreas
 viveres
+viveria
 vivesse
 arrasava
 aterrava
@@ -347,6 +348,7 @@ irritativa
 reavistara
 reservista
 restritiva
+revestiria
 revestisse
 revisitara
 revistaria

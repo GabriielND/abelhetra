@@ -39,6 +39,7 @@ corre
 corro
 corso
 corte
+corto
 coser
 cospe
 cosso
@@ -46,12 +47,14 @@ costo
 crepe
 ocres
 perco
+pesco
 porco
 prece
 secos
 secto
 socos
 tecer
+tecos
 tocos
 torce
 tosco
@@ -87,11 +90,13 @@ porcos
 preces
 rococo
 sector
+sectos
 sococo
 socoro
 soroco
 torcer
 toscos
+trecos
 trocos
 cerrote
 corpete
@@ -167,5 +172,6 @@ prospector
 prospectos
 receptores
 retrocesso
+secretores
 retrocessor
 retrospecto
