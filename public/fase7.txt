@@ -81,6 +81,7 @@ idonea
 idoneo
 invada
 invade
+invadi
 nadada
 nadava
 naiade
@@ -116,6 +117,7 @@ indiano
 invadia
 nadando
 nanando
+nevando
 nevoado
 ninando
 nodoado
@@ -123,6 +125,7 @@ nodoide
 noivado
 novenio
 ondeava
+vaiando
 vendada
 vendado
 vendida
@@ -134,6 +137,7 @@ devaneia
 devaneio
 enevoado
 envenena
+envenene
 enviando
 indevida
 indevido
@@ -150,6 +154,7 @@ devaneava
 dividendo
 dividindo
 divindade
+envenenei
 inanidade
 invadindo
 endividado
