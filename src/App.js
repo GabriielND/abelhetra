@@ -113,6 +113,7 @@ export default function Abelhetra() {
   }, [aviso])
 
   function addLetra(letra){
+    sumirAviso()
     setTexto(texto + letra)
   }
 
@@ -201,6 +202,7 @@ export default function Abelhetra() {
     fases()
     setAcertos([])
     setPonto(0)
+    setTexto()
     fase = selectedFase.split(" ")[1]
     fetchData()
   }
