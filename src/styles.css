@@ -29,9 +29,10 @@ body {
   height: var(--tam_letra);
   margin: 2px 5px;
   font-family: 'Mukta', sans-serif;
+  cursor: pointer;
 }
 
-.letras .cima, .meio, .baixo, .botoes, .regras_ficha, .pontos_ficha{
+.letras .cima, .meio, .baixo, .botoes, .ficha{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,15 +50,22 @@ body {
   background-color: #572e99;
   font-size: 20px;
   font-weight: bold;
-  width: var(--alt_botao);
+  width: auto;
   height: var(--alt_botao);
-  margin: 10px 5px ;
-  padding-bottom: 3px;
+  margin: 10px 5px;
   font-family: 'Mukta', sans-serif;
+  padding-inline: 10px;
+  cursor: pointer;
 }
 
-.botao.interno{
+.interno{
   background-color: #855bc9;
+}
+
+.pequeno{
+  width: var(--alt_botao);
+  padding-bottom: 3px;
+  padding-inline: 0px;
 }
 
 .botao:active, .letra:active{
@@ -74,7 +82,7 @@ body {
   transition: visibility 300ms linear 0s, opacity 300ms;
 }
 
-.regras_ficha, .pontos_ficha, .aviso_ficha{
+.ficha{
   flex-direction: column;
   margin: auto;
   border: 2px solid transparent;
@@ -86,21 +94,51 @@ body {
   box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.regras_ficha h2, .pontos_ficha h2{
+.ficha h2{
   margin: 0px;
+  cursor: default;
 }
 
-.pontos_ficha{
+.ficha select{
+  font-family: inherit;
+  font-size: 20px;
+  padding-inline: 10px;
+  border: 2px solid #fcbe24;
+  border-radius: 20px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-color: #572e99;
+  color: #fcbe24;
+  text-align: center;
+}
+
+.ficha select:focus{
+  border: 2px solid #fcbe24;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.pontos{
   min-width: 200px;
   width: 15%;
 }
 
-.aviso_ficha{
+.avisos{
   min-width: 0px;
   width: 200px;
   text-align: center;
   padding-right: 0px;
   margin-top: -60px;
+}
+
+.ficha ul, li, a{
+  cursor: default;
+}
+
+.fases{
+  width: auto;
 }
 
 .acertos {
@@ -120,14 +158,11 @@ body {
   padding-left: 5px; 
   margin: 0;
   text-align: center;
+  cursor: default;
 }
 
 #apagar {
   transform: scale(-1, 1);
-}
-
-#enviar, #regras, #fechar_regras, #fechar_pontos {
-  width: var(--larg_botao);
 }
 
 #regras {
@@ -143,6 +178,7 @@ body {
   font-size: 25px;
   font-weight: bold;
   min-height: 45px;
+  cursor: pointer;
 }
 
 #pontos {
@@ -157,6 +193,7 @@ body {
   background-color: transparent;
   border: none;
   text-align: center;
+  cursor: text;
 }
 #escrito_input:focus{
   outline: none;

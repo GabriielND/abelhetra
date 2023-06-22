@@ -20,18 +20,29 @@ export default function Abelhetra() {
   const [pontuacao, setPontuacao] = useState([]);
   const [mostraRegra, setMostraRegra] = useState(true);
   const [mostraPontos, setMostraPontos] = useState(true);
+  const [mostraFases, setMostraFases] = useState(true);
+  const [selectedFase, setSelectedFase] = useState('Fase 1');
+
   const [estiloRegra, setEstiloRegra] = useState({
     visibility : "hidden",
     opacity : 0,
   });
+  
   const [estiloPontos, setEstiloPontos] = useState({
     visibility : "hidden",
     opacity : 0,
   });
+  
   const [estiloAviso, setEstiloAviso] = useState({
     visibility : "visible",
     opacity : 0,
   });
+
+  const [estiloFases, setEstiloFases] = useState({
+    visibility : "visible",
+    opacity : 0,
+  });
+
 
   function embaralha(listaLetras){
     listaLetras = listaLetras.split("")
@@ -51,9 +62,11 @@ export default function Abelhetra() {
     setLetra6(listaLetras[5].toUpperCase())
 
   }
-
-  let fase = Math.floor(Math.random() * 11) + 1
+  const maxFases = 12
+  let fase = Math.floor(Math.random() * maxFases) + 1
   // fase = 1
+
+  const numFases = Array.from({length: maxFases}, (_, i) => i + 1)
 
   let fetchData = async() => {
     let endereco = "./fase" + fase + ".txt"
@@ -66,7 +79,7 @@ export default function Abelhetra() {
     setPontuacao(definePontos(lista, lista[0]))
     lista.shift()
     setRespostas(oldRespostas => [...oldRespostas, ...lista])
-    setFaseFixa(faseFixa + fase)
+    setFaseFixa(fase)
   }
 
   useEffect(() => {
@@ -169,6 +182,29 @@ export default function Abelhetra() {
     }
   }
 
+  function fases(){
+    setMostraFases(!mostraFases)
+    if (mostraFases){
+      setEstiloFases({
+        visibility : "visible",
+        opacity : 1,
+      })
+    } else {
+      setEstiloFases({
+        visibility : "hidden",
+        opacity : 0,
+      })
+    }
+  }
+
+  function mudarFase(){
+    fases()
+    setAcertos([])
+    setPonto(0)
+    fase = selectedFase.split(" ")[1]
+    fetchData()
+  }
+
   function avisar(){
     setEstiloAviso({
       visibility : "visible",
@@ -186,7 +222,7 @@ export default function Abelhetra() {
 
   return (
     <div class="letras">
-      <a id="fase">Fase #{faseFixa}</a>
+      <a id="fase" onClick={fases}>Fase #{faseFixa}</a>
       <a id="pontos" onClick={pontos}>{ponto} - {classe}</a>
       <a id="escrito">{texto}</a>
       <input type="text" id="escrito_input" value={texto} onKeyDown={(e) => handler(e)}/>
@@ -204,16 +240,16 @@ export default function Abelhetra() {
         <button id="letra6" class="letra" onClick={() => addLetra(letra6)}>{letra6}</button>
     </div>
     <div class="botoes">
-      <button id="embaralhar" class="botao" onClick={() => embaralha(letras)}>⟳</button>
+      <button id="embaralhar" class="botao pequeno" onClick={() => embaralha(letras)}>⟳</button>
       <button id="enviar" class="botao" onClick={enviar}>Enviar</button>
-      <button id="apagar" class="botao" onClick={apaga}>➜</button>
+      <button id="apagar" class="botao pequeno" onClick={apaga}>➜</button>
     </div>
     <div class="botoes">
       <button id="regras" class="botao" onClick={regras}>Regras</button>
     </div>
 
     <div class="container" style={estiloRegra}>
-      <div class="regras_ficha">
+      <div class="ficha regras">
       <h2>Regras</h2>
       <ul>
         <li>Todas as palavras precisam ter a letra do meio</li>
@@ -228,7 +264,7 @@ export default function Abelhetra() {
     </div>
 
     <div class="container" style={estiloPontos}>
-      <div class="pontos_ficha">
+      <div class="ficha pontos">
       <h2>Pontos</h2>
       <a>Iniciante: 0</a>
       <a>Aprendiz: {pontuacao[0]}</a>
@@ -239,12 +275,32 @@ export default function Abelhetra() {
       <a>Dicionário: {pontuacao[5]}</a>
       <a>Especialista: {pontuacao[6]}</a>
       <a>Genial: {pontuacao[7]}</a>
+      
       <button id="fechar_pontos" class="botao interno" onClick={pontos}>Fechar</button>
       </div>
     </div>
 
+    <div class="container" style={estiloFases}>
+      <div class="ficha fases">
+        <h2>Escolha uma fase:</h2> 
+        <label>
+            <select
+              value={selectedFase}
+              onChange={e => setSelectedFase(e.target.value)}>
+              {numFases.map(item => {
+                return (<option>Fase {item}</option>)
+              })}
+            </select>
+        </label>
+        <div class="botoes">
+          <button class="botao interno" onClick={fases}>Cancelar</button>
+          <button class="botao interno" onClick={mudarFase}>Selecionar</button>
+        </div>
+      </div>
+    </div>
+
     <div class="container" style={estiloAviso}>
-      <div class="aviso_ficha">
+      <div class="ficha avisos">
         <a>{aviso}</a>
       </div>
     </div>
