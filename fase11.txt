@@ -51,7 +51,7 @@ tunar
 turca
 turra
 tutti
-única
+unica
 unira
 untar
 urica
@@ -75,6 +75,7 @@ cucuia
 curara
 curica
 currar
+curtia
 curtir
 curtiu
 cururu
@@ -120,6 +121,7 @@ cinturar
 circuita
 criatura
 cutucara
+tatuaria
 taturana
 triturar
 trutaria

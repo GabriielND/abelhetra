@@ -47,7 +47,9 @@ deito
 diodo
 dodoi
 doido
+domei
 edito
+emito
 etico
 etimo
 medio
@@ -60,6 +62,7 @@ omite
 otico
 otimo
 tedio
+teimo
 titio
 tomei
 tomem
@@ -72,6 +75,8 @@ cocote
 coiote
 comece
 comete
+cometi
+cometo
 comico
 comido
 comite

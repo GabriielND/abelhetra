@@ -50,6 +50,7 @@ soam
 soem
 soma
 some
+somo
 tema
 teme
 temo
@@ -113,6 +114,7 @@ remar
 remos
 resma
 retem
+romas
 serem
 somam
 somar
@@ -172,6 +174,7 @@ mestre
 metera
 metros
 moesse
+morram
 morrem
 morrer
 morros
@@ -298,6 +301,7 @@ retraem
 seremos
 sermoes
 setemês
+somamos
 tamaras
 temeram
 temores
@@ -311,12 +315,14 @@ tomates
 amarrota
 amorosas
 amorosos
+amostram
 amostrar
 amostras
 arrastam
 arremata
 arremate
 arremete
+estarmos
 maestros
 marearam
 maremoto
@@ -329,6 +335,7 @@ masmorra
 meteoros
 metermos
 morreram
+morreras
 morresse
 mostrara
 rarearam
@@ -343,13 +350,14 @@ retramar
 retratam
 retremer
 semestre
-sem-teto
 temerosa
 temeroso
 temessem
 teoremas
 testaram
 torresmo
+tramamos
+tramaram
 tratamos
 trataram
 tratarem
@@ -374,6 +382,7 @@ assomaram
 aterraram
 atestaram
 atrasaram
+estaremos
 estomatos
 estromato
 maremotor
@@ -394,9 +403,11 @@ restarmos
 retomaram
 retomarem
 semestres
+somaremos
 temerosas
 terremoto
 testarmos
+tomaremos
 torresmos
 arrastaram
 arremessam
@@ -408,6 +419,8 @@ maremotora
 marretaram
 metastases
 metatarsos
+morassemos
+morreremos
 motosserra
 restaremos
 retrataram
@@ -416,8 +429,10 @@ termometro
 termostato
 terremotos
 testaremos
+tomassemos
 amarrotaram
 arremeteram
 rastreassem
 termometros
 termostatos
+mostrassemos
