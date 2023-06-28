@@ -62,7 +62,7 @@ export default function Abelhetra() {
     setLetra6(listaLetras[5].toUpperCase())
 
   }
-  const maxFases = 12
+  const maxFases = 13
   let fase = Math.floor(Math.random() * maxFases) + 1
   // fase = 1
 
@@ -202,7 +202,7 @@ export default function Abelhetra() {
     fases()
     setAcertos([])
     setPonto(0)
-    setTexto()
+    setTexto("")
     fase = selectedFase.split(" ")[1]
     fetchData()
   }

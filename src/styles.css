@@ -30,6 +30,7 @@ body {
   margin: 2px 5px;
   font-family: 'Mukta', sans-serif;
   cursor: pointer;
+  padding: 0;
 }
 
 .letras .cima, .meio, .baixo, .botoes, .ficha{
@@ -230,4 +231,10 @@ select::-ms-expand {
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 20px;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .fases select {
+    padding-right: 0px;
+  }
 }
